@@ -18,21 +18,21 @@ g++ server.cpp -o server -lpthread
 
 The command protocol contains 8 different commands:
 
-* ```bash get_trains_info``` - information about the schedule of the trains that are running on the current datel
+* ```get_trains_info``` - information about the schedule of the trains that are running on the current datel
 
-* ```bash get_arrival_info [station]``` - information about the arrival schedule of the trains that are running in the current hour;
+* ```get_arrival_info [station]``` - information about the arrival schedule of the trains that are running in the current hour;
 
-* ```bash get_departure_info [station]``` - information about the departure schudule of the trains that are running the current hour;
+* ```get_departure_info [station]``` - information about the departure schudule of the trains that are running the current hour;
 
-* ```bash add_arrival_delay <ID> <station> <delay>``` - modifies the arrival delay for a specific train and station (works only if a user is connected);
+* ```add_arrival_delay <ID> <station> <delay>``` - modifies the arrival delay for a specific train and station (works only if a user is connected);
 
-* ```bash add_departute_delay <ID> <station> <delay>``` - modifies the departure delay for a specific train and station (works only if a user is connected);
+* ```add_departute_delay <ID> <station> <delay>``` - modifies the departure delay for a specific train and station (works only if a user is connected);
 
-* ```bash login <username>``` - connects a user based on a username;
+* ```login <username>``` - connects a user based on a username;
 
-* ```bash logout``` - disconnects the connected user;
+* ```logout``` - disconnects the connected user;
 
-* ```bash close``` - closes the client;
+* ```close``` - closes the client;
 
 # License
 
