@@ -14,4 +14,8 @@ g++ server.cpp -o server -lpthread
 ./server
 ```
 
-### The IP address may differ depanding on where the server process is located. For this example, the server is located on the same system as the client.
+## The IP address may differ depanding on where the server process is located. For this example, the server is located on the same system as the client.
+
+The command protocol contains 8 different commands:
+
+* ```bash get_trains_info``` - information about the schedule of the trains that are running on the current date
